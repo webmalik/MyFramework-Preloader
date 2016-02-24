@@ -4,7 +4,9 @@ $(document).ready(function(){
 		loader = $('.preloader');
 
 	loader.animate({	
-		opacity: 0
-	}, 500);
+		opacity: 0,
+	}, 1000, function() {
+		loader.css("display", "none");
+	});
 
 });
